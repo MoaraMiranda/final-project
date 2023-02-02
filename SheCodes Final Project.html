@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My love for Astrology</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Ms+Madi&display=swap');
+
+    body {
+      background-image: linear-gradient(to bottom right, #f5f0fd, #eee4ff, #907ab3);
+      background-color: #eee7fa;
+    }
+
+    h1 {
+      color: #442a6d;
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+    }
+
+    h2 {
+      color: #5c4385;
+      font-family: 'Courgette', cursive;
+    }
+
+    img {
+      padding: 10px;
+      max-width: 100%;
+    }
+
+    p {
+      margin: 20px auto;
+      line-height: 28px;
+      color: #5c4385;
+      font-family: 'Courgette', cursive;
+      font-size: 18px;
+    }
+
+    button {
+      display: block;
+      margin: 15px auto;
+      color: #e5dbf7;
+      background-color: #5c4385;
+      border: 1px solid #5c4385;
+      border-radius: 4px;
+      padding: 15px 30px;
+      font-size: 24px;
+      box-shadow: 3px 3px 10px rgba(68, 42, 109, 0.6);
+      transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+      color: #5c4385;
+      background: #e5dbf7;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: 'Courgette', cursive;
+    }
+
+    a:hover {
+      cursor: pointer;
+      color: #442a6d
+    }
+
+    hr {
+      height: 1px;
+      background-color: #e5dbf7;
+      border: none;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .footer {
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .learn-more {
+      color: #7f69a3;
+    }
+
+    .menu {
+      background: #5c4385;
+      padding: 10px 15px;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+    .crazy {
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    Astrology
+  </div>
+  <div class="container">
+    <h1>
+      I love Astrology
+    </h1>
+    <h2>
+      No, I'm not <span class="crazy">crazy</span> ! 😜
+    </h2>
+    <br />
+    <hr />
+    <img
+      src="https://media.istockphoto.com/photos/zodiac-signs-inside-of-horoscope-circle-astrology-in-the-sky-with-picture-id1293628662?k=20&m=1293628662&s=612x612&w=0&h=TXcMgudAq2OcHpCSlWtP5IjWLFKXsTtfykhG9b9PrrM="
+      alt="Chart Map">
+    <br />
+    <hr />
+    <p>
+      Thousands of years ago, humanity began looking at the sky and mapping the stars and then using them to locate,
+      move and
+      explore the waters, discovering new lands and civilizations. Observing the sky, people noticed that some events
+      were
+      repeated as some patterns were repeated in the sky. Science, religion, mysticism, there was no clear division
+      between
+      them. Years passed, science developed 🤩 and a few years ago Astronomy - which is the science that studies the
+      stars
+      - broke away from Astrology - which is an interpretation of how planetary motions can influence life on Earth.
+      I know that Astrology is not science, but a matter of belief and it was very difficult for me to accept this
+      believing
+      side of me. Using astrology I get to know myself better, I learned to deal with people in a much more open way and
+      I can
+      understand some needs of the ones around me just by looking at their birth chart. I can say that I am more
+      tolerant,
+      more empathetic with myself and with others after I started to study and understand astrology.
+      It is common to hear that people do not identify with their sign, or that it is not possible for everyone born
+      between
+      May 21 and June 20 to have the same characteristics 🤔. Indeed, it is not possible, we are all different. The
+      purpose
+      of
+      astrology is not to make everyone equal, but to understand the peculiarities of each one using the <em>Birth
+        chart</em> for
+      this.
+      Let's start with the <strong>basics</strong>, what is your Sun Sign?
+      <br />
+      <br />
+
+      <a class="learn-more" href="https://en.wikipedia.org/wiki/Astrology" target="_blank">
+        Learn more on Wikipidia
+      </a>
+    </p>
+
+
+
+    <button class="find-more">
+      Find out your Sun Sign!
+    </button>
+    <p class="footer">
+      Code by <a href="https://www.linkedin.com/in/moara-miranda/" target="_blank">
+        Moara Miranda </a>
+    </p>
+  </div>
+  <script>
+    function sign() {
+      let name = prompt("What is your name?");
+      let day = prompt("Which day you was born? Ex: 10");
+      let month = prompt("which month you was born? Ex: 12");
+      let sign = "";
+      if (day >= 21 && month == 3 || day <= 20 && month == 4) {
+        sign = "Aries"
+      }
+      if (day >= 21 && month == 4 || day <= 20 && month == 5) {
+        sign = "Taurus"
+      }
+      if (day >= 21 && month == 5 || day <= 20 && month == 6) {
+        sign = "Gemini"
+      }
+      if (day >= 21 && month == 6 || day <= 22 && month == 7) {
+        sign = "Cancer"
+      }
+      if (day >= 23 && month == 7 || day <= 22 && month == 8) {
+        sign = "Leo"
+      }
+      if (day >= 23 && month == 8 || day <= 22 && month == 9) {
+        sign = "Virgo"
+      }
+      if (day >= 23 && month == 9 || day <= 22 && month == 10) {
+        sign = "Libra"
+      }
+      if (day >= 23 && month == 10 || day <= 21 && month == 11) {
+        sign = "Scorpio"
+      }
+      if (day >= 22 && month == 11 || day <= 21 && month == 12) {
+        sign = "Sagittarius"
+      }
+      if (day >= 22 && month == 12 || day <= 20 && month == 1) {
+        sign = "Carpricorn"
+      }
+      if (day >= 21 && month == 1 || day <= 19 && month == 2) {
+        sign = "Aquarius"
+      }
+      if (day >= 20 && month == 2 || day <= 20 && month == 3) {
+        sign = "Pisces"
+      }
+      if (name == "" || day == "" || month == "") {
+        alert(" Hey, don't forget to fill all filds 😜")
+      } else {
+        if (sign == "") {
+          alert(" Was not possible to find your Sun sign. Try to use valid day and month numbers. 😊")
+        } else {
+          alert(name + " your sun sign is " + sign);
+        }
+      }
+    }
+
+    let findmore = document.querySelector(".find-more")
+    findmore.addEventListener("click", sign)
+  </script>
+</body>
+
+</html>
